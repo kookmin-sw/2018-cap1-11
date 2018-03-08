@@ -1,10 +1,3 @@
-## 팀소개 및 페이지를 꾸며주세요.
-
-- readme.md 수정.
-
-- index.md 예시보고 수정.
-
-- 수정후 팀페이지 확인하여 점검.
 
 11조  https://kookmin-sw.github.io/2018-cap-11
 
