@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="@dimen/space16"
+            android:text="@string/sensor"
+            android:textSize="@dimen/hh"
+            android:id="@+id/sensorDataTextView"/>
+
+
+
+    <!-- temperature -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/space8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/space8"
+            android:paddingEnd="@dimen/space56"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/temp"
+            android:id="@+id/temperatureLabel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/n"
+            android:id="@+id/temperatureValueTextView"/>
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space8">
+
+            <TextView
+                android:id="@+id/avgTemperatureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="29dp"
+                android:paddingStart="@dimen/space8"
+                android:text="@string/avtemp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/n"
+            android:id="@+id/avgTemperatureValueTextView"/>
+
+        </LinearLayout>
+
+
+    <!-- humidity -->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingStart="@dimen/space8"
+            android:paddingEnd="@dimen/space56"
+            android:text="@string/hum"
+            android:id="@+id/humidityLabel"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/nn"
+            android:id="@+id/humidityValueTextView"
+            android:layout_width="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+    <!-- average humidity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingStart="@dimen/space8"
+            android:paddingEnd="29dp"
+            android:text="@string/avhum"
+            android:id="@+id/avgHumidityLabel"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/nn"
+            android:id="@+id/avgHumidityValueTextView"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
