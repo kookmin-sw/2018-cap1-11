@@ -18,7 +18,8 @@
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/space24"
+        android:layout_margin="30dp"
+
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -58,10 +59,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/space24">
+        android:padding="@dimen/space16">
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/space24"
             android:layout_marginRight="@dimen/space24"
@@ -91,10 +92,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/space24">
+        android:padding="@dimen/space16">
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/space24"
             android:layout_marginRight="@dimen/space24"
@@ -114,6 +115,35 @@
     </LinearLayout>
 
 
+    //센서주소
+
+    //이메일
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space16">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space24"
+            android:layout_marginRight="@dimen/space24"
+            android:gravity="start"
+            android:text="@string/profile_sensor"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_base"
+            android:focusable="false"
+            android:gravity="start"
+            android:textSize="@dimen/h2" />
+    </LinearLayout>
+
 
 
     //핸드폰 번호
@@ -121,10 +151,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:padding="@dimen/space24">
+        android:padding="@dimen/space16">
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/space24"
             android:layout_marginRight="@dimen/space24"
@@ -156,7 +186,7 @@
         android:paddingLeft="@dimen/space24"
         android:gravity="start"
         android:text="phone"
-        android:textSize="@dimen/h2"
+        android:textSize="@dimen/h3"
         android:textStyle="bold" />
 
 

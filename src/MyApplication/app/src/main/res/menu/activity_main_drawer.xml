@@ -4,7 +4,7 @@
         android:id="@+id/g1"
         android:checkableBehavior="all">
 
-        // 리스트 (나무들 목록)
+        // 나무들 목록
         <item
             android:id="@+id/nav_list"
             android:icon="@drawable/ic_list"

@@ -28,10 +28,13 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
     implementation 'com.squareup.okhttp3:okhttp:3.3.1'
-    implementation 'org.parceler:parceler:1.0.0'
+    implementation 'org.parceler:parceler-api:1.1.10'
+
     implementation 'com.google.code.gson:gson:2.7'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    annotationProcessor 'org.parceler:parceler:1.1.10'
 
 
     testImplementation 'junit:junit:4.12'

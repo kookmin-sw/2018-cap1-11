@@ -19,6 +19,7 @@
 <string name="profile_name">NAME</string>
 <string name="profile_phone">PHONE</string>
 <string name="profile_email">EMAIL</string>
+<string name="profile_sensor">SENSOR</string>
 <string name="etc">etc</string>
 
 <string name="album">갤러리</string>
@@ -37,6 +38,18 @@
 
 <string name="device_number">DEVICE</string>
 <string name="phone_number">PHONE</string>
+
+
+    <string name="sensor"> Sensors data</string>
+    <string name="temp">온 도</string>
+    <string name="avtemp">평 균 온 도</string>
+    <string name="hum">습 도</string>
+    <string name="avhum">평 균 습 도</string>
+    <string name="n"> N/A°C </string>
+    <string name="nn"> N/A°% </string>
+    <string name="time"> hh:mm:ss </string>
+    <string name="refresh">refresh</string>
+
 
 <string name="name_need">이름을 설정해주세요.</string>
 <string name="change_save">변경사항을 저장하시겠습니까?</string>

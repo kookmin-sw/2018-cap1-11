@@ -17,6 +17,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ImageButton;
 
 import com.c.myapplication.item.MemberInfoItem;
 import com.c.myapplication.lib.EtcLib;
@@ -46,7 +47,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     ImageView profileIconChangeImage;
     EditText nameEdit;
     EditText emailEdit;
-
+    EditText sensorEdit;
     EditText phoneEdit;
 
     MemberInfoItem currentItem;
@@ -117,6 +118,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         emailEdit.setText(currentItem.email);
 
 
+        sensorEdit = (EditText) findViewById(R.id.profile_sensor);
+        sensorEdit.setText(currentItem.treemac);
 
         String phoneNumber = EtcLib.getInstance().getPhoneNumber(context);
 
@@ -177,6 +180,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         item.phone = EtcLib.getInstance().getPhoneNumber(context);
         item.name = nameEdit.getText().toString();
         item.email = emailEdit.getText().toString();
+        item.treemac = sensorEdit.getText().toString();
 
 
         return item;
@@ -189,7 +193,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
      */
     private boolean isChanged(MemberInfoItem newItem) {
         if(newItem.name.trim().equals(currentItem.name)
-                && newItem.email.trim().equals(currentItem.email))
+                && newItem.email.trim().equals(currentItem.email)
+                && newItem.treemac.trim().equals(currentItem.treemac))
         {
             Log.d(TAG, "return " + false);
             return false;
@@ -276,6 +281,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                     }
                     currentItem.name = newItem.name;
                     currentItem.email = newItem.email;
+                    currentItem.treemac = newItem.treemac;
                     finish();
                 }
             }

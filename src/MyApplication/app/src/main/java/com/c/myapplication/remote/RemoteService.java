@@ -1,7 +1,7 @@
 package com.c.myapplication.remote;
 
 import com.c.myapplication.item.MemberInfoItem;
-//import com.c.myapplication.item.treeInfoItem;
+import com.c.myapplication.item.treeItem;
 
 import java.util.ArrayList;
 
@@ -51,6 +51,23 @@ public interface RemoteService {
     @POST("/tree/info")
     Call<String> inserttreeInfo(@Body treeInfoItem infoItem);
 
+
+    public int member_id;
+    public double latitude;
+    public double longitude;
+    public double humidity;
+    public double temperature;
+    public String mac;
+
 */
+
+    //남뮤..지도..
+    @GET("/tree/list")
+    Call<ArrayList<treeItem>> listtreeInfo(@Query("member_seq") int memberSeq,
+                                           @Query("latitude") double latitude,
+                                           @Query("longitude") double longitude,
+                                           @Query("humidity") double humidity,
+                                           @Query("temperature") double temperature,
+                                            @Query("mac") double mac);
 
 }

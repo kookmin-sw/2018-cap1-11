@@ -8,6 +8,7 @@ public class MemberInfoItem {
     public String phone;
     public String name;
     public String email;
+    public String treemac;
     @SerializedName("member_icon_filename") public String memberIconFilename;
 
 
@@ -18,6 +19,7 @@ public class MemberInfoItem {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", memberIconFilename='" + memberIconFilename + '\'' +
+                ", treemac'" + treemac + '\'' +
 
                 '}';
     }

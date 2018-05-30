@@ -1,5 +1,6 @@
 package com.c.myapplication;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -123,17 +124,17 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
-/*
+        FragmentManager manager = getFragmentManager();
+
         if (id == R.id.nav_list) {
-            GoLib.getInstance().goFragment(getSupportFragmentManager(),
-                    R.id.content_main, BestFoodListFragment.newInstance());
+            manager.beginTransaction().replace(R.id.content_main, new StateActivity()).commit();
 
         } else if (id == R.id.nav_map) {
-            GoLib.getInstance().goFragment(getSupportFragmentManager(),
-                    R.id.content_main, BestFoodMapFragment.newInstance());
+          //  GoLib.getInstance().goFragment(getSupportFragmentManager(),
+
 
         } else
-        */if (id == R.id.nav_profile) {
+        if (id == R.id.nav_profile) {
             GoLib.getInstance().goProfileActivity(this);
         }
 
