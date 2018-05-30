@@ -1,6 +1,6 @@
 package com.c.myapplication;
 
-
+import android.app.FragmentManager;
 import android.app.Activity;
 import android.os.Bundle;
 import java.net.InetAddress;
@@ -8,9 +8,11 @@ import android.net.wifi.WifiManager;
 import android.net.DhcpInfo;
 import java.io.IOException;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.WindowManager;
 import android.view.Window;
+
 
 import java.net.DatagramSocket;
 import java.net.DatagramPacket;
@@ -24,7 +26,7 @@ import android.view.View;
 
 
 
-public class StateActivity extends Activity{
+public class StateActivity  extends AppCompatActivity {
 
     int udpPort = 1025;
     DatagramSocket socket;

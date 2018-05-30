@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
         FragmentManager manager = getFragmentManager();
 
         if (id == R.id.nav_list) {
-            manager.beginTransaction().replace(R.id.content_main, new StateActivity()).commit();
+            GoLib.getInstance().goStateActivity(this);
 
         } else if (id == R.id.nav_map) {
           //  GoLib.getInstance().goFragment(getSupportFragmentManager(),

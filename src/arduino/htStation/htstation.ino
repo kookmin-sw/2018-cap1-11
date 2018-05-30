@@ -1,3 +1,5 @@
+
+
 // Arduino pin number used for the communication with DHT22 sensor.
 // A custom 1-Wire communication protocol is used for this module.
 // See: https://www.adafruit.com/datasheets/Digital%20humidity%20and%20temperature%20sensor%20AM2302.pdf
@@ -16,8 +18,8 @@
 // in case that it become unresponsive (hardware reset required!)
 #define WIFI_RESTART_TIMEOUT 30000
 
-#include <dht.h>
-#include <ESP8266.h>;
+#include <DHT.h>
+#include <Adafruit_ESP8266.h>
 
 // keep tracking the average temperature and humidity 
 // values, starting with last system reset

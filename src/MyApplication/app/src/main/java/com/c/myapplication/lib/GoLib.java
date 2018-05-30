@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 
 //import com.c.myapplication.treeInfoActivity;
 import com.c.myapplication.ProfileActivity;
+import com.c.myapplication.StateActivity;
 
 /**
  * 액티비티나 프래그먼트 실행 라이브러리
@@ -67,6 +68,12 @@ public class GoLib {
      */
     public void goProfileActivity(Context context) {
         Intent intent = new Intent(context, ProfileActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
+
+    public void goStateActivity(Context context) {
+        Intent intent = new Intent(context, StateActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
